@@ -725,7 +725,7 @@ h3 {
 }
 
 .clearfix {
-    *height: 1%
+    height: 1%
 }
 
 .clearfix:after,
