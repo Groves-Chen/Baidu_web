@@ -1,21 +1,777 @@
+/*****************************  公共样式   *******************************/
+
 * {
-    margin: 0;
-    padding: 0;
-    font-family: "微软雅黑";
-    margin-left: 2px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
 }
 
+article,
+aside,
+audio,
+body,
+dd,
+div,
+dl,
+dt,
+figure,
+footer,
+form,
 h1,
-h2 {
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-h4 {
-    margin-bottom: 2px;
-}
-
+h2,
+h3,
 h4,
+h5,
+h6,
+header,
+input,
+li,
+menu,
+nav,
+ol,
+p,
+section,
+textarea,
+ul,
+video {
+    padding: 0;
+    margin: 0
+}
+
 p {
-    font-size: 18px;
+    margin: 0 0 10px
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-left {
+    text-align: left
+}
+
+.lsl_mar {
+    margin: 3.5% 0;
+    text-align: center;
+    color: #666666;
+    font-size: 15px
+}
+
+:after,
+:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+
+html {
+    font-size: 64px
+}
+
+.root_head {
+    border-bottom: 1px solid #ccc
+}
+
+.logo {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px
+}
+
+img {
+    width: 100%;
+    vertical-align: middle;
+    border: 0
+}
+
+b,
+em,
+span {
+    display: inline-block;
+    font-style: inherit
+}
+
+.wx {
+    width: 121px !important
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited {
+    text-decoration: none !important
+}
+
+@media screen and (max-width: 769px) {
+    .root_head {
+        position: fixed !important;
+        z-index: 999 !important;
+        max-width: 640px !important;
+        min-width: 320px !important;
+        overflow: hidden
+    }
+    .logo {
+        margin-top: 84px !important
+    }
+}
+
+@media screen and (max-width: 530px) {
+    html {
+        font-size: 32px
+    }
+    body {
+        font-size: 0.45rem !important
+    }
+    .logo {
+        margin-top: 72px !important
+    }
+}
+
+.wrap_phone {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+ul {
+    padding: 0
+}
+
+li {
+    list-style-type: none
+}
+
+body {
+    font-family: "微软雅黑";
+    font-size: 0.275rem;
+    line-height: 1.5;
+    color: #333
+}
+
+.mar_top {
+    padding-top: 10px !important;
+    font-size: 14px
+}
+
+.show_img {
+    margin-top: 5px
+}
+
+.wrap {
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    overflow: hidden
+}
+
+.fl {
+    float: left
+}
+
+.fr {
+    float: right
+}
+
+header {
+    max-width: 640px;
+    margin: 0 auto;
+    text-align: center
+}
+
+.msg_top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 1% 0 1% 2%;
+    text-align: left;
+    background: rgba(26, 18, 20, 0.85);
+    font-size: 0;
+    z-index: 99999;
+    color: #fff;
+    min-width: 320px;
+    max-width: 640px;
+    display: none
+}
+
+.msg_top_img {
+    max-width: 40px;
+    min-width: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 50%;
+    background: #8db8ed
+}
+
+.msg_top_box {
+    display: inline-block;
+    font-size: 13px;
+    margin: 0 2%;
+    vertical-align: middle;
+    width: 83%;
+    padding-left: 2%;
+    text-align: justify;
+    border-left: 1px solid #4a3b28
+}
+
+.msg_top_content,
+.msg_top_name {
+    padding: 0.5% 0;
+    font-family: "微软雅黑";
+    margin: 0;
+    font-size: 12px
+}
+
+.msg_top_name {
+    font-size: 16px !important;
+    font-weight: bolder
+}
+
+.bg_red {
+    color: #9c0000
+}
+
+nav ul {
+    clear: both;
+    *zoom: 1;
+    border: 1px solid #dddddd;
+    border-top: none;
+    box-sizing: border-box
+}
+
+nav ul:after {
+    clear: both;
+    display: block;
+    visibility: hidden;
+    height: 0;
+    line-height: 0;
+    content: "";
+    font-size: 0
+}
+
+nav li {
+    float: left;
+    box-sizing: border-box;
+    width: 25%;
+    font-size: 0.4375rem;
+    color: #555555;
+    text-align: center;
+    word-spacing: 0.78125rem;
+    height: 2.5rem;
+    border-right: 1px solid #dddddd;
+    border-top: 1px solid #dddddd
+}
+
+nav li:first-of-type {
+    background: #f5f5f5
+}
+
+nav li:nth-of-type(4n) {
+    border-right: none
+}
+
+nav li a {
+    padding-top: 0.3125rem;
+    display: block;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box
+}
+
+nav li p {
+    padding-top: 0.3125rem;
+    color: #555555
+}
+
+nav li em {
+    width: 1.09375rem;
+    height: 1.09375rem;
+    display: inline-block
+}
+
+.phone_btm_list_wrap {
+    max-width: 640px;
+    margin: 0 auto
+}
+
+.phone_btm_list_box {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 640px;
+    margin: 0 auto;
+    display: flex;
+    display: -webkit-flex;
+    z-index: 9991;
+    background: #bf001e
+}
+
+.phone_btm_list {
+    display: inline-block;
+    width: 33.333%
+}
+
+.swtCenter_wrap {
+    max-width: 640px;
+    margin: 0 auto
+}
+
+.swtCenter {
+    width: 100%;
+    background-color: #FFF;
+    position: fixed;
+    bottom: 0;
+    -moz-border-radius: 15px;
+    -webkit-box-shadow: 0 0 20px rgba(10, 2, 4, 0.75);
+    box-shadow: 0 0 20px rgba(10, 2, 4, 0.75);
+    z-index: 9999;
+    margin: 0 auto;
+    max-width: 640px
+}
+
+.swtCenter {
+    display: none;
+    font-size: 12px
+}
+
+.swtCenter h3 {
+    background: url("http://wap.gzspfs120.com/swt/images/swt_bg01.png") 15px 1px no-repeat #054d8b;
+    background-color: #004680;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0.8em 0;
+    color: white;
+    overflow: hidden;
+    text-indent: 4em
+}
+
+h3 {
+    margin: 0 !important
+}
+
+.swt-btn {
+    clear: both;
+    line-height: 50px;
+    border-top: 1px solid #ddd;
+    font-size: 12px
+}
+
+.text {
+    overflow: hidden;
+    margin: 5px 1%;
+    color: black;
+    line-height: 2;
+    font-size: 0
+}
+
+.text img {
+    padding: 10px 5px 18px;
+    width: 27%;
+    vertical-align: middle;
+    max-width: 75px;
+    display: inline-block
+}
+
+.text_box {
+    display: inline-block;
+    width: 70%;
+    vertical-align: middle;
+    text-align: justify;
+    font-size: 12px;
+    background: #e2e2e2;
+    margin: 0 2%;
+    border-radius: 7px;
+    box-shadow: 0 2px 1px 1px #80909c
+}
+
+.swt-a1,
+.swt-a2 {
+    color: #C1C1C1;
+    float: left;
+    width: 50%;
+    background: url("http://wap.gzspfs120.com/swt/images/swt_bg01.png") 29px -49px no-repeat;
+    text-indent: 60px
+}
+
+.swt-a2 {
+    border-left: 1px solid #ddd;
+    margin-left: -1px;
+    color: #006f9c;
+    background-position: 26px -105px
+}
+
+.text_box_p,
+.text_box_time {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 15px
+}
+
+.text_box_time {
+    color: #939393
+}
+
+.mitty_box {
+    position: fixed;
+    left: 0;
+    top: 40%;
+    z-index: 88
+}
+
+.mitty_box ul {
+    width: 90px;
+    padding: 0;
+    margin: 0
+}
+
+.mitty_box ul li {
+    width: 90px;
+    height: 45px;
+    color: #fff;
+    font-size: 12px;
+    list-style: none;
+    background: #4ebec0;
+    border: 1px solid #fff;
+    text-align: center;
+    margin-bottom: 4px;
+    margin-left: -45px
+}
+
+.mitty_box ul li:hover {
+    margin-left: 0;
+    background: rgba(239, 161, 89, 0.8);
+    transition: margin-left 0.5s cubic-bezier(.86, 0, .07, 1);
+    -moz-transition: margin-left 0.5s cubic-bezier(.86, 0, .07, 1);
+    -webkit-transition: margin-left 0.5s cubic-bezier(.86, 0, .07, 1);
+    -o-transition: margin-left 0.5s cubic-bezier(.86, 0, .07, 1)
+}
+
+.mitty_box ul li a {
+    color: #fff
+}
+
+.lis_left {
+    float: right;
+    width: 50%;
+    line-height: 43px
+}
+
+.icon_lis {
+    font-size: 25px !important;
+    margin: 0 !important
+}
+
+.lis_right {
+    float: left;
+    height: 45px;
+    width: 50%;
+    padding-top: 4%
+}
+
+.lis_refresh {
+    float: right;
+    line-height: 45px;
+    width: 50%
+}
+
+.yjcx_wrap {
+    background-color: #ccc;
+    width: 90%;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+    padding: 10px;
+    margin: 0 auto
+}
+
+.yjcx_input {
+    color: #3c3c3c;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 0;
+    line-height: 22px;
+    background-color: #fbfbfb;
+    padding: 8px 13px 8px 54px;
+    margin-bottom: 10px;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 3px solid transparent
+}
+
+.yjcx_input:focus {
+    background: #fff;
+    box-shadow: 0;
+    border: 3px solid #3498db;
+    color: #3498db;
+    outline: 0;
+    padding: 13px 13px 13px 54px
+}
+
+#form_yjcx {
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    width: 100%;
+    border: #fbfbfb solid 4px;
+    cursor: pointer;
+    background-color: #ff6005;
+    color: #fff;
+    font-size: 24px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+    margin-top: -4px;
+    font-weight: 700
+}
+
+.mar_border {
+    margin-top: 10px !important
+}
+
+.messAge_head {
+    padding: 15px 0 25px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-top: 10px solid #a99470;
+    border-right: 10px solid transparent;
+    border-radius: 5px;
+    background: rgb(3, 103, 188);
+    color: #fff;
+    font-size: 14px
+}
+
+.messAge_head h3 {
+    margin: 0
+}
+
+.messAge_icon {
+    margin-left: 26px;
+    font-size: 25px
+}
+
+.imge {
+    float: left;
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-left: -80px;
+    margin-top: 4px
+}
+
+.messAge_content {
+    margin-left: 10px;
+    padding: 0
+}
+
+.messAge_content li {
+    list-style: none;
+    border-left: 8px double #654f28;
+    border-bottom: 7px solid transparent;
+    margin-bottom: 10px;
+    margin-right: 3px;
+    box-shadow: 1px 0 11px 2px #382b16
+}
+
+.messAge_lis {
+    list-style: none;
+    margin-left: 95px;
+    margin-right: 10px;
+    padding: 13px 0
+}
+
+.btm_line {
+    border-bottom: 2px solid
+}
+
+.name {
+    font-size: 16px;
+    margin: 10px 0
+}
+
+.time {
+    margin-left: 6px;
+    font-size: 10px
+}
+
+.good {
+    float: right;
+    margin-right: 10px;
+    font-size: 10px !important
+}
+
+.dis {
+    display: block !important
+}
+
+.iconfont.icon-lunbofanyeanniu_xia- {
+    color: #337ab7;
+    cursor: pointer
+}
+
+.col {
+    color: #000000 !important
+}
+
+.col::after {
+    content: "\e668" !important
+}
+
+.mitty_more {
+    display: block;
+    text-align: center;
+    padding: 10px 15px;
+    border: 1px solid #9d9d9d;
+    background: #ccc;
+    margin: 0 7.5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-family: "iconfont"
+}
+
+.mitty_more::after {
+    content: "\e66a";
+    position: relative;
+    left: 10px
+}
+
+.copy {
+    text-align: center;
+    background: #0759a3;
+    padding: 26px 0;
+    color: #c9e3f1;
+    padding-bottom: 65px;
+    font-size: 14px
+}
+
+.ys {
+    color: #c9e3f1 !important
+}
+
+.iconfont.icon-dianhua-copy {
+    margin-right: 13px;
+    font-size: 12px;
+    color: #c9e3f1
+}
+
+.bg_li {
+    background: rgb(255, 133, 12) !important;
+    color: #080808
+}
+
+.btns_box {
+    background: #810012 !important
+}
+
+.national_no {
+    background: #ff6005 !important
+}
+
+.national_yes {
+    background: #0367bc !important
+}
+
+@media (max-width: 767px) {
+    .hidden-xs {
+        display: none!important
+    }
+}
+
+.visible-xs-block {
+    display: none !important
+}
+
+@media (max-width: 767px) {
+    .visible-xs-block {
+        display: block !important
+    }
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px
+}
+
+.col-sm-6,
+.col-xs-12 {
+    float: left;
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px
+}
+
+.col-sm-6 {
+    width: 100%
+}
+
+@media (min-width: 768px) {
+    .col-sm-6 {
+        width: 50%
+    }
+}
+
+.row:after,
+.row:before {
+    display: table;
+    content: " "
+}
+
+.row:after {
+    clear: both
+}
+
+.clearfix {
+    *height: 1%
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden
+}
+
+.col-lg-6.col-md-6.col-sm-6.col-xs-6 {
+    margin-top: 7.5px;
+    padding: 4px
+}
+
+.fixed_header {
+    width: 100%;
+    max-width: 640px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #015cab;
+    padding: 5px 0 0 0;
+    z-index: 999;
+}
+
+.fixed_header_left {
+    width: 60%;
+    padding-left: 15px;
+    float: left;
+}
+
+.fixed_header_right {
+    width: 40%;
+    padding: 0 5%;
+    float: right;
+}
+
+.mar_header_top {
+    margin-top: 145px;
+}
+
+@media screen and (max-width: 640px) {
+    .mar_header_top {
+        margin-top: 25%;
+    }
 }
