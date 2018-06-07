@@ -107,6 +107,19 @@ input::-webkit-input-placeholder{
  
  .boatloads {
  	height: 710px;
+ 	text-align: center;
+ 	color: #6c6c6c;
+ }
+ .boatloads h5{
+ 	font-size: 16px;
+ 	margin-top: 80px;
+ 	text-transform:uppercase;
+ 	line-height: 30px;
+}
+ .boatloads h3{
+ 	font-size: 36px;
+ 	width: 668px;
+ 	margin-left: 470px;
  }
  /***********服务***************/
  
