@@ -199,23 +199,23 @@ input::-webkit-input-placeholder{
  
  .product {
  	height: 1580px;
+ 	text-align: center;
  }
  .product h3{
- 	font-size: 30px;
+ 	font-size: 42px;
  	line-height: 50px;
- 	text-align: center;
  	padding-top: 100px;
- 	font-weight: lighter;
  }
  .product ul{
- 	margin: 90px 0 0 210px;
+ 	margin: 90px 0 190px 0;
  }
  .product ul li{
  	display: inline-block;
  	width: 280px;
  	height: 280px;
- 	text-align: center;
  	color: #b3b3b3;
+ }
+ .product ul li:nth-child(2),.product ul li:nth-child(3){
  	margin-left: 80px;
  }
 .product ul li p{
@@ -223,6 +223,31 @@ input::-webkit-input-placeholder{
 	line-height: 30px;
 	text-align: center;
 }
+.product_arc{
+	padding-left: 310px;
+}
+.img_left{
+	float: left;
+}
+.img_arc{
+	width: 460px;
+	float: left;
+	padding: 70px 0 0 100px;
+	margin-bottom: 80px;
+}
+.img_arc h5{
+	width: 280px;
+	line-height: 40px;
+	font-size: 20px;
+	text-align: left;
+}
+.img_arc p{
+	line-height: 30px;
+	color: #a0a0a0;
+	text-align: left;
+	width: 315px;
+}
+
  /**********团队成员***************/
  
  .team {
