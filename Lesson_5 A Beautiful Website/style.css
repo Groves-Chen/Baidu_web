@@ -106,13 +106,13 @@ input::-webkit-input-placeholder{
  /***********介绍***************/
  
  .boatloads {
- 	height: 710px;
+ 	height: 620px;
  	text-align: center;
  	color: #6c6c6c;
+ 	padding-top: 90px;
  }
  .boatloads h5{
  	font-size: 16px;
- 	margin-top: 80px;
  	text-transform:uppercase;
  	line-height: 30px;
 }
@@ -121,17 +121,108 @@ input::-webkit-input-placeholder{
  	width: 668px;
  	margin-left: 470px;
  }
+ .boatloads ul{
+ 	margin: 0 0 0 230px;
+ }
+ .boatloads ul li{
+ 	width: 480px;
+ 	height: 110px;
+ 	float: left;
+ 	text-align: left;
+ 	margin-top: 60px;
+ }
+ .boatloads ul li:nth-of-type(even){
+ 	margin-left: 120px;
+  }
+
+ .boatloads ul li span{
+ 	color: #141414;
+ 	font-size: 20px;
+ 	display: block;
+ 	margin-top: 10px;
+ }
+ .boatloads ul li p{
+ 	font-size: 16px;
+ 	line-height: 20px;
+ 	color: #c3c3c3;
+ 	margin: 12px 0 0 73px;
+ 	width: 373px;
+ }
+  .boatloads ul li img{
+  	float: left;
+  }
  /***********服务***************/
  
  .call_action {
  	height: 800px;
+ 	background: url(images/call_bg.png) no-repeat;
+ 	position: relative;
  }
+ .call_left{
+ 	position: absolute;
+ 	top: 180px;
+ 	left: 210px;
+ }
+ .call_left p,.call_left h3{
+ 	width: 375px;
+ }
+ .call_left h3{
+	color: #fff;
+	font-size: 36px;	
+ }
+.call_left p{
+	color: #b0b2b1;
+	font-size: 18px;
+	margin-top: 40px;
+	line-height: 30px;
+}
+.call_button{
+	display: inline-block;
+	width: 240px;
+	height: 60px;
+	border: 1px solid #6f756c;
+	margin-top: 50px;
+	line-height: 60px;
+	color: #fff;
+	text-align: center;
+}
+.call_left a:hover{
+	background: #fff;
+	color: #000000;
+}
+.call_action img{
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
  /***********产品***************/
  
  .product {
  	height: 1580px;
- 	background: url(images/product_bg.png) no-repeat;
  }
+ .product h3{
+ 	font-size: 30px;
+ 	line-height: 50px;
+ 	text-align: center;
+ 	padding-top: 100px;
+ 	font-weight: lighter;
+ }
+ .product ul{
+ 	margin: 90px 0 0 210px;
+ }
+ .product ul li{
+ 	display: inline-block;
+ 	width: 280px;
+ 	height: 280px;
+ 	text-align: center;
+ 	color: #b3b3b3;
+ 	margin-left: 80px;
+ }
+.product ul li p{
+	margin-top: 30px;
+	line-height: 30px;
+	text-align: center;
+}
  /**********团队成员***************/
  
  .team {
@@ -140,7 +231,7 @@ input::-webkit-input-placeholder{
  /***********联系我们***************/
  
  .contact {
- 	height: 700px;
+ 	height: 700px; 
  }
  
  footer {
